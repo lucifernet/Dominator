@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/layoutTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/txtGradeTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/student_grade" />
+
+        <Spinner
+            android:id="@+id/spinnerGrade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:minWidth="150dp" />
+
+        <TextView
+            android:id="@+id/txtClassTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="@string/student_class" />
+
+        <Spinner
+            android:id="@+id/spinnerClass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:minWidth="150dp" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layoutTitle" >
+
+        <GridView
+            android:id="@+id/gridStudent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:columnWidth="190dp"
+            android:horizontalSpacing="15dp"
+            android:numColumns="6"
+            android:verticalSpacing="@dimen/activity_vertical_margin" />
+
+       <TextView
+            android:id="@+id/emptyResults"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/warning"
+            android:gravity="center"
+            android:text="@string/empty_list"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+</RelativeLayout>

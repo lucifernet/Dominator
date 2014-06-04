@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/round_border_phone"
+    android:baselineAligned="false" >
+
+    <FrameLayout
+        android:id="@+id/layoutImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" >
+
+        <ImageView
+            android:id="@+id/imgPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/empty"
+            android:src="@drawable/ic_student" >
+        </ImageView>
+
+        <tw.com.ischool.dominator.util.CircleProgressBar
+            android:id="@+id/progress"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible" />
+    </FrameLayout>
+
+    <!--
+         ImageView
+        android:id="@+id/imgMenu"
+        android:layout_width="20dp"
+        android:layout_height="36dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/layoutImage"
+        android:clickable="true"
+        android:contentDescription="@string/empty"
+        android:paddingTop="@dimen/item_horizontal_margin"
+        android:scaleType="centerCrop"
+        android:src="@drawable/card_menu_button_overflow" /
+    -->
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/layoutImage"
+        android:lines="1"
+        android:paddingTop="@dimen/item_horizontal_margin"
+      
+        android:textColor="#484848"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/txtClass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/txtName"
+        android:layout_below="@id/txtName"
+        android:maxLines="1"
+     
+        android:textColor="#979797"
+        android:textSize="13sp" />
+
+</RelativeLayout>

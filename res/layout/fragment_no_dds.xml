@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" >
+
+        <TextView
+            android:id="@+id/txtMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:text="@string/nodds"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/imgNoDDS"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_below="@id/txtMessage"
+            android:contentDescription="@string/empty"
+            android:src="@drawable/sorry" />
+
+        <TextView
+            android:id="@+id/txtMessage1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/imgNoDDS"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@id/imgNoDDS"
+            android:text="@string/nodds1" />
+
+        <TextView
+            android:id="@+id/txtNoDDSPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtMessage1"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/imgNoDDS"
+            android:text="@string/nodds_phone" />
+
+        <TextView
+            android:id="@+id/txtNoDDSContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtMessage1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/txtNoDDSPhone"
+            android:text="@string/nodds_contact" />
+
+        <TextView
+            android:id="@+id/txtNoDDSEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtNoDDSPhone"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/imgNoDDS"
+            android:text="@string/nodds_email" />
+    </RelativeLayout>

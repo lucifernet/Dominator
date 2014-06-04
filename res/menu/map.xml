@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_navi"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom|withText"
+        android:icon="@drawable/navigation"        
+        android:title="@string/map_navi"/>
+    
+    <item
+        android:id="@+id/action_my_location"
+        android:orderInCategory="200"
+        android:showAsAction="ifRoom|withText"
+         android:icon="@drawable/marker1"        
+        android:title="@string/map_my_location"/>
+
+    <item
+        android:id="@+id/action_target_location"
+        android:orderInCategory="200"
+        android:showAsAction="ifRoom|withText"
+         android:icon="@drawable/marker2"        
+        android:title="@string/map_target_location"/>
+</menu>
